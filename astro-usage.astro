@@ -1,0 +1,41 @@
+---
+// Example of how to use the Productivity Metrics Map in an Astro project
+import Layout from '../layouts/MainLayout.astro';
+import ProductivityMetricsMap from '../components/ProductivityMetricsMap';
+---
+
+<Layout title="Productivity Metrics Map">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-center mb-8">
+      Understanding Productivity Metrics
+    </h1>
+    
+    <p class="text-lg mb-8 max-w-3xl mx-auto">
+      This interactive visualization helps you understand the relationships 
+      between different productivity metrics in product development. Explore 
+      how concepts from resource utilization, outcome achievement, and value 
+      creation relate to one another.
+    </p>
+    
+    <div class="my-10">
+      <!-- The client:load directive ensures the component is hydrated immediately on page load -->
+      <ProductivityMetricsMap client:load />
+    </div>
+    
+    <div class="mt-12 max-w-3xl mx-auto prose">
+      <h2>How to Use This Visualization</h2>
+      <p>
+        Click on any concept to see its definition, measurement methods, and 
+        relationships to other concepts. Use the language switcher in the top 
+        right to change the display language.
+      </p>
+      
+      <h2>About This Project</h2>
+      <p>
+        This visualization was created to help product teams better understand 
+        the nuanced differences between commonly used productivity metrics and 
+        how they relate to value delivery.
+      </p>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,26 @@
+{
+  "name": "productivity-metrics-map",
+  "version": "0.1.0",
+  "description": "Interactive visualization showing how resource, outcome, and value metrics relate in product development",
+  "main": "src/components/ProductivityMetricsMap.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "productivity",
+    "metrics",
+    "visualization",
+    "product-development",
+    "concept-map"
+  ],
+  "author": "[Your Name]",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}
